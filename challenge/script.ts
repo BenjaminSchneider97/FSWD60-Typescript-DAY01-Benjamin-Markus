@@ -1,9 +1,9 @@
-var menu : Array<string>=["Burger", "Schnitzel", "Soup", "Fish", "Burrito"];
+let menu : Array<string>=["Burger", "Schnitzel", "Soup", "Fish", "Burrito"];
 const [itemOne, itemTwo, itemThree, itemFour, itemFive] = menu;
-for(let i = 0 ; i < menu.length; i++){
+for(let value of menu){
 	var x = document.createElement("p");
 	x.setAttribute("class", "food");
-	var y = document.createTextNode(menu[i]);
+	var y = document.createTextNode(value);
 	x.appendChild(y);
 	document.getElementById("menu").appendChild(x);
 
