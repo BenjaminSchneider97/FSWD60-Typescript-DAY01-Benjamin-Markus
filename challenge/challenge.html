@@ -11,9 +11,10 @@
     body {
         background-color: lightgrey;
     }
-    .container{
-    	width: 100%!important;
-    	margin: 0!important;
+
+    .container {
+        width: 100% !important;
+        margin: 0 !important;
     }
 
     .header {
@@ -24,8 +25,8 @@
     }
 
     .header img {
-    	position: absolute;
-    	z-index: 1;
+        position: absolute;
+        z-index: 1;
         width: 60%;
         height: auto;
         margin: 15px 0 0 55px;
@@ -67,18 +68,38 @@
     #main_content {
         margin-top: 100px;
     }
-    .item{
-    	width: 100%;
+
+    .item {
+        width: 100%;
     }
-    .item img{
-    	width: 100%;
-    	height: 750px!important;
+
+    .item img {
+        width: 100%;
+        height: 750px !important;
     }
-    .col-lg-12{
-    	padding: 0!important;
+
+    .col-lg-12 {
+        padding: 0 !important;
     }
-    #myCarousel{
-    	height: 750px;
+
+    #myCarousel {
+        height: 750px;
+    }
+    .carousel-caption{
+    	color: #000;
+    }
+    #allburgers{
+    	display: flex;
+    	justify-content: space-around;
+    	flex-wrap: wrap;
+    }
+    .burgers{
+    	width: 30%;
+    	display: flex;
+    	flex-direction: column;
+    }
+    .burgers p{
+    	text-align: center;
     }
     </style>
 </head>
@@ -102,19 +123,19 @@
                         <li data-target="#myCarousel" data-slide-to="0" class=""></li>
                         <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-                         <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-                          <li data-target="#myCarousel" data-slide-to="4" class=""></li>
-                           <li data-target="#myCarousel" data-slide-to="5" class=""></li>
-                            <li data-target="#myCarousel" data-slide-to="6" class=""></li>
-                             <li data-target="#myCarousel" data-slide-to="7" class=""></li>
-                              <li data-target="#myCarousel" data-slide-to="8" class=""></li>
-                               <li data-target="#myCarousel" data-slide-to="9" class=""></li>
-                                <li data-target="#myCarousel" data-slide-to="10" class=""></li>
-                                 <li data-target="#myCarousel" data-slide-to="11" class=""></li>
-                                  <li data-target="#myCarousel" data-slide-to="12" class=""></li>
-                                   <li data-target="#myCarousel" data-slide-to="13" class=""></li>
-                                    <li data-target="#myCarousel" data-slide-to="14" class=""></li>
-                                     <li data-target="#myCarousel" data-slide-to="15" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="7" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="8" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="9" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="10" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="11" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="12" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="13" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="14" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="15" class=""></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="item">
@@ -153,7 +174,7 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/2.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -162,7 +183,7 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/3.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -171,7 +192,7 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/4.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -180,7 +201,7 @@
                                 </div>
                             </div>
                         </div>
-                           <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/5.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -189,7 +210,7 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/6.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -198,7 +219,7 @@
                                 </div>
                             </div>
                         </div>
-                <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/7.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -207,7 +228,7 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/8.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -216,7 +237,7 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/9.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -225,7 +246,7 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/10.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -234,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/11.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -243,7 +264,7 @@
                                 </div>
                             </div>
                         </div>
-                       <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/12.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -252,7 +273,7 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="item">
+                        <div class="item">
                             <img class="third-slide" src="img/13.png" alt="Third slide">
                             <div class="container">
                                 <div class="carousel-caption">
@@ -260,9 +281,7 @@
                                     <p>Fish King</p>
                                 </div>
                             </div>
-                        </div>                        
-
-
+                        </div>
                     </div>
                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -274,6 +293,9 @@
           </a>
                 </div>
             </div>
+        </div>
+        <div id="allburgers">
+        	
         </div>
 </body>
 <div class="container">
