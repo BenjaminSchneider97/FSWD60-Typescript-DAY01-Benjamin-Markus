@@ -1,10 +1,16 @@
-var menu = ["Burger", "Schnitzel", "Soup", "Fish", "Burrito"];
-var itemOne = menu[0], itemTwo = menu[1], itemThree = menu[2], itemFour = menu[3], itemFive = menu[4];
-for (var _i = 0, menu_1 = menu; _i < menu_1.length; _i++) {
-    var value = menu_1[_i];
-    var x = document.createElement("p");
-    x.setAttribute("class", "food");
-    var y = document.createTextNode(value);
-    x.appendChild(y);
-    document.getElementById("menu").appendChild(x);
+var heading = ["Wir leben für den", "Entdecke unsere", "Was gibt's", "Hier richtig", "Wo ist der nächste"];
+var heading2 = ["Geschmack", "Produkte", "Neues", "Sparen", "King Finder"];
+var itemOne = heading[0], itemTwo = heading[1], itemThree = heading[2], itemFour = heading[3], itemFive = heading[4];
+for (var value in heading) {
+    var outerDiv = document.createElement("div");
+    outerDiv.setAttribute("class", "headingdivs");
+    var h3 = document.createElement("h3");
+    var text1 = document.createTextNode(heading[value]);
+    h3.appendChild(text1);
+    outerDiv.appendChild(h3);
+    var h1 = document.createElement("h1");
+    var text2 = document.createTextNode(heading2[value]);
+    h1.appendChild(text2);
+    outerDiv.appendChild(h1);
+    document.getElementById("headingdata").appendChild(outerDiv);
 }
